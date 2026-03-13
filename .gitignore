@@ -117,3 +117,50 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# ─── Python / FastAPI ───────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Entorno virtual
+venv/
+env/
+.venv/
+.env/
+
+# Variables de entorno (NUNCA subir al repo)
+.env
+.env.*
+!.env.example
+
+# Distribución / empaquetado
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mypy / linters
+.mypy_cache/
+.ruff_cache/
+
+# Alembic
+# (las migraciones SÍ se suben, solo ignorar caché)
+alembic/__pycache__/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

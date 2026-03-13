@@ -1,0 +1,84 @@
+AppCorrea/
+│
+├── README.md
+├── .gitignore
+│
+├── mobile/                          # Flutter
+│   ├── pubspec.yaml
+│   └── lib/
+│       ├── main.dart
+│       ├── core/
+│       │   ├── theme/
+│       │   │   └── app_theme.dart
+│       │   ├── constants/
+│       │   │   └── api_constants.dart
+│       │   └── network/
+│       │       └── dio_client.dart
+│       ├── modules/
+│       │   ├── auth/
+│       │   │   ├── screens/
+│       │   │   │   └── login_screen.dart
+│       │   │   ├── cubit/
+│       │   │   │   └── auth_cubit.dart
+│       │   │   └── repository/
+│       │   │       └── auth_repository.dart
+│       │   ├── pacientes/
+│       │   │   ├── screens/
+│       │   │   ├── cubit/
+│       │   │   └── repository/
+│       │   ├── cie11/
+│       │   │   ├── screens/
+│       │   │   ├── cubit/
+│       │   │   └── repository/
+│       │   ├── agenda/
+│       │   │   ├── screens/
+│       │   │   ├── cubit/
+│       │   │   └── repository/
+│       │   └── tareas/
+│       │       ├── screens/
+│       │       ├── cubit/
+│       │       └── repository/
+│       └── shared/
+│           ├── widgets/
+│           └── utils/
+│
+└── backend/                         # FastAPI
+    ├── requirements.txt
+    ├── .env.example
+    ├── alembic.ini
+    ├── alembic/
+    │   └── versions/
+    └── app/
+        ├── main.py
+        ├── core/
+        │   ├── config.py
+        │   ├── security.py
+        │   └── database.py
+        ├── modules/
+        │   ├── auth/
+        │   │   ├── router.py
+        │   │   ├── service.py
+        │   │   ├── models.py
+        │   │   └── schemas.py
+        │   ├── pacientes/
+        │   │   ├── router.py
+        │   │   ├── service.py
+        │   │   ├── models.py
+        │   │   └── schemas.py
+        │   ├── cie11/
+        │   │   ├── router.py
+        │   │   ├── service.py
+        │   │   ├── models.py
+        │   │   └── schemas.py
+        │   ├── agenda/
+        │   │   ├── router.py
+        │   │   ├── service.py
+        │   │   ├── models.py
+        │   │   └── schemas.py
+        │   └── tareas/
+        │       ├── router.py
+        │       ├── service.py
+        │       ├── models.py
+        │       └── schemas.py
+        └── shared/
+            └── dependencies.py

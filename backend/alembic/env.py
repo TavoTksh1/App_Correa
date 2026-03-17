@@ -13,6 +13,8 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from app.modules.pacientes.models import Paciente, Sesion
 from app.modules.agenda.models import Cita
+from app.modules.tareas.models import Tarea
+
 
 config = context.config
 if config.config_file_name is not None:
